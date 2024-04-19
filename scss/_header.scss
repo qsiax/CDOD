@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 20px 0px;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 40px;
+            &:nth-child(5) {
+                a {
+                    font-size: 26px;
+                    font-weight: 500;
+                    padding: 0px 10px;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: -0.03em;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '_variables';
+@import '_reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+html {
+	&.none-scroll {
+		overflow: hidden;
+	}
+}
+html,
+body {
+	font-size: 16px; 
+	color: $text;
+	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	a {
+		text-decoration: none;
+		color: $text;
+	}
+	li {
+		list-style: none;
+	}
+}
+
+// General Container
+._container {
+	max-width: 1760px;
+	margin: 0 auto;
+	overflow: hidden;
+	@media (max-width: 600px) {
+		max-width: 100%;
+		padding: 0px 20px;
+	}
+}
+
+@import '_header';
+@import '_home';
