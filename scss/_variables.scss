@@ -1,10 +1,48 @@
 $main-color: #ffff;
-$primary-color: #B1FF37;
+$primary-color: #FF5500;
 $secondary-color: #632EF2;
 $tertiary-color: none;
 $text: #070409;
-$text-secondary: #B1B1B1;
+$text-secondary: #EAECF4;
 $text-secondary-02: #E6E6E6; 
 $error: #ED0A34;
 $succes: #0284C7;
 $transition: all .5s ease;
+
+$mtpage: 200px;
+$mbpage: 200px;
+
+$color-01: #1A1C1D;
+$color-02: #B0D7B4;
+$color-03: #FCECB1;
+$color-04: #CFB2F7;
+$color-05: #BDFCFC;
+$color-06: #FCB4B4;
+
+
+$secondary-font: "Days One", sans-serif;
+
+.heading {
+    font-size: 48px;
+    font-family: $secondary-font;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    span {
+        color: $primary-color;
+    }
+}
+
+.heading-page {
+    font-size: 65px;
+    font-family: $secondary-font;
+    margin-bottom: 80px;
+    text-align: left;
+    span {
+        color: $primary-color;
+    }
+}
+
+.sub-heading {
+    font-size: 20px;
+}

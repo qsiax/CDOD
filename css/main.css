@@ -1,4 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.heading {
+  font-size: 48px;
+  font-family: "Days One", sans-serif;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.heading span {
+  color: #FF5500;
+}
+
+.heading-page {
+  font-size: 65px;
+  font-family: "Days One", sans-serif;
+  margin-bottom: 80px;
+  text-align: left;
+}
+.heading-page span {
+  color: #FF5500;
+}
+
+.sub-heading {
+  font-size: 20px;
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -49,6 +73,10 @@ meter {
   color: unset;
 }
 
+::-moz-placeholder {
+  color: unset;
+}
+
 :-ms-input-placeholder {
   color: unset;
 }
@@ -65,7 +93,7 @@ meter {
   display: none;
 }
 
-:where([contenteditable]:not([contenteditable="false"])) {
+:where([contenteditable]:not([contenteditable=false])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
@@ -73,8 +101,189 @@ meter {
   -webkit-user-select: auto;
 }
 
-:where([draggable="true"]) {
+:where([draggable=true]) {
   -webkit-user-drag: element;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../source/fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-ExtraBold.woff") format("woff"), url("../source/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("../source/fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Heavy.woff") format("woff"), url("../source/fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("../source/fonts/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-LightItalic.woff") format("woff"), url("../source/fonts/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("../source/fonts/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-ThinItalic.woff") format("woff"), url("../source/fonts/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("../source/fonts/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-BlackItalic.woff") format("woff"), url("../source/fonts/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("../source/fonts/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-BoldItalic.woff") format("woff"), url("../source/fonts/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("../source/fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-SemiBold.woff") format("woff"), url("../source/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("../source/fonts/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../source/fonts/Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-SemiBoldItalic.eot");
+  src: local("Gilroy SemiBold Italic"), local("Gilroy-SemiBoldItalic"), url("../source/fonts/Gilroy-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-SemiBoldItalic.woff") format("woff"), url("../source/fonts/Gilroy-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../source/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Light.woff") format("woff"), url("../source/fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("../source/fonts/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-MediumItalic.woff") format("woff"), url("../source/fonts/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-ExtraBoldItalic.eot");
+  src: local("Gilroy ExtraBold Italic"), local("Gilroy-ExtraBoldItalic"), url("../source/fonts/Gilroy-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-ExtraBoldItalic.woff") format("woff"), url("../source/fonts/Gilroy-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../source/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Regular.woff") format("woff"), url("../source/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("../source/fonts/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-HeavyItalic.woff") format("woff"), url("../source/fonts/Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../source/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Medium.woff") format("woff"), url("../source/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("../source/fonts/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-RegularItalic.woff") format("woff"), url("../source/fonts/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("../source/fonts/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-UltraLight.woff") format("woff"), url("../source/fonts/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../source/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Bold.woff") format("woff"), url("../source/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("../source/fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Thin.woff") format("woff"), url("../source/fonts/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../source/fonts/Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("../source/fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("../source/fonts/Gilroy-Black.woff") format("woff"), url("../source/fonts/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Days One";
+  src: url("../source/fonts/DaysOne-Regular.ttf"), url("../source/fonts/DaysOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../source/fonts/icomoon.eot?ua19nz");
+  src: url("../source/fonts/icomoon.eot?ua19nz#iefix") format("embedded-opentype"), url("../source/fonts/icomoon.ttf?ua19nz") format("truetype"), url("../source/fonts/icomoon.woff?ua19nz") format("woff"), url("../source/fonts/icomoon.svg?ua19nz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-download:before {
+  content: "\e902";
+  color: #fff;
+}
+
+._icon-close:before {
+  content: "\e901";
+}
+
+._icon-menu:before {
+  content: "\e900";
 }
 
 * {
@@ -83,7 +292,6 @@ meter {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
 }
 
 html.none-scroll {
@@ -94,23 +302,19 @@ html,
 body {
   font-size: 16px;
   color: #070409;
-  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
+  font-family: "Gilroy", sans-serif;
 }
-
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 0;
 }
-
 html a,
 body a {
   text-decoration: none;
   color: #070409;
 }
-
 html li,
 body li {
   list-style: none;
@@ -121,7 +325,6 @@ body li {
   margin: 0 auto;
   overflow: hidden;
 }
-
 @media (max-width: 600px) {
   ._container {
     max-width: 100%;
@@ -129,140 +332,265 @@ body li {
   }
 }
 
+.menu {
+  position: fixed;
+  width: 350px;
+  height: 420px;
+  top: 0;
+  right: 0;
+  background: #1A1A1A;
+  z-index: 9;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+.menu.active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.menu * {
+  color: white;
+}
+.menu__navigation {
+  margin-top: 100px;
+}
+.menu__navigation li {
+  margin-bottom: 10px;
+}
+.menu__navigation li a {
+  font-size: 20px;
+}
+
 .header {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
-  padding: 20px 0px;
+  padding: 40px 0px;
+  z-index: 11;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
-
+.header.sticky {
+  padding: 25px 0px;
+}
+.header.sticky * {
+  color: #070409;
+}
+.header.sticky .header__logo-text {
+  width: 0;
+  height: 0;
+}
+.header.sticky .header__content {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.header.sticky .header__logo {
+  width: 80px;
+  height: 80px;
+}
+.header.sticky .header__menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .header__body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo-wrapper:first-child .header__logo {
+  background: url("../source/logo-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo-wrapper:last-child .header__logo {
+  background: url("../source/logo-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+.header__logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-
+.header__logo-text span:first-child {
+  font-size: 16px;
+  margin-left: 6px;
+}
+.header__logo-text span:last-child {
+  font-size: 32px;
+  text-transform: uppercase;
+}
 .header__navigation {
+  display: none;
+}
+.header__navigation li {
+  margin-right: 20px;
+}
+.header__navigation li a {
+  font-size: 24px;
+}
+.header__menu-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #1A1C1D;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-
-.header__navigation li {
-  margin-right: 40px;
+.header__menu-wrapper.active {
+  background: white;
 }
-
-.header__navigation li:nth-child(5) a {
-  font-size: 26px;
-  font-weight: 500;
-  padding: 0px 10px;
+.header__menu-wrapper.active .header__menu {
+  color: #1A1C1D !important;
 }
-
-.header__navigation li:last-child {
-  margin-right: 0;
-}
-
-.header__navigation li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
+.header__menu {
+  font-size: 18px;
+  color: white !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .home {
   min-height: 100vh;
-  background: #bdff39;
-  background: -webkit-radial-gradient(circle, #bdff39 0%, #a8ff36 100%);
-  background: -o-radial-gradient(circle, #bdff39 0%, #a8ff36 100%);
-  background: radial-gradient(circle, #bdff39 0%, #a8ff36 100%);
+  position: relative;
 }
-
+.home video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home__video {
+  background: #FF5500;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.home__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
 .home__body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
   position: relative;
+  z-index: 2;
 }
-
 .home__item-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .home__item {
-  width: 200px;
-  height: 200px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background: #ffff;
-  -webkit-filter: drop-shadow(0px 18px 28px rgba(9, 30, 66, 0.1));
-          filter: drop-shadow(0px 18px 28px rgba(9, 30, 66, 0.1));
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-  cursor: pointer;
-  margin: 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.home__item.unactive {
   width: 180px;
   height: 180px;
+  border-radius: 50%;
+  background: white;
+  -webkit-filter: drop-shadow(0px 18px 28px rgba(9, 30, 66, 0.1));
+          filter: drop-shadow(0px 18px 28px rgba(9, 30, 66, 0.1));
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border: 1px solid #EAECF4;
 }
-
+.home__item.unactive {
+  width: 160px;
+  height: 160px;
+}
 .home__item.active {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
 }
-
 .home__item.active .home__item-circle {
   visibility: visible;
   opacity: 1;
@@ -270,35 +598,35 @@ body li {
       -ms-transform: scale(1);
           transform: scale(1);
 }
-
+.home__item:hover {
+  width: 200px;
+  height: 200px;
+}
+.home__item:hover .home__item-text {
+  color: #FF5500;
+}
 .home__item-circle {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 250px;
-  height: 250px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   position: relative;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-
 .home__item-circle-text {
   position: absolute;
   width: 100%;
@@ -306,19 +634,25 @@ body li {
   -webkit-animation: rotateText 10s linear infinite;
           animation: rotateText 10s linear infinite;
 }
-
 .home__item-circle-text p {
   font-size: 16px;
   color: #070409;
 }
-
 .home__item-circle-text p span {
   position: absolute;
   left: 50%;
   font-size: 16px;
-  -webkit-transform-origin: 0 13vmin;
-      -ms-transform-origin: 0 13vmin;
-          transform-origin: 0 13vmin;
+  -webkit-transform-origin: 0 100px;
+      -ms-transform-origin: 0 100px;
+          transform-origin: 0 100px;
+}
+.home__item-text {
+  font-size: 20px;
+  font-family: "Days One", sans-serif;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #070409;
 }
 
 @-webkit-keyframes rotateText {
@@ -342,3 +676,256 @@ body li {
             transform: rotate(0deg);
   }
 }
+.news__body {
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.news__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.news__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.news__item {
+  width: 601px;
+  height: 523px;
+  border-radius: 40px;
+  margin-right: 40px;
+  padding: 30px;
+  position: relative;
+}
+.news__item * {
+  color: white;
+}
+.news__item:last-child {
+  margin-right: 0;
+}
+.news__item:nth-child(1) {
+  max-width: 400px;
+  background: #1A1C1D;
+  border-top-left-radius: 0px;
+}
+.news__item:nth-child(1) .news__item-img {
+  background: url("../source/news-02.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__item:nth-child(2) .news__item-img {
+  background: url("../source/news-01.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__item:nth-child(3) .news__item-img {
+  background: url("../source/news-03.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__item:nth-child(2), .news__item:nth-child(7), .news__item:nth-child(12), .news__item:nth-child(17) {
+  background: #B0D7B4;
+}
+.news__item:nth-child(3), .news__item:nth-child(8), .news__item:nth-child(13), .news__item:nth-child(18) {
+  background: #FCECB1;
+}
+.news__item:nth-child(4), .news__item:nth-child(9), .news__item:nth-child(14), .news__item:nth-child(19) {
+  background: #CFB2F7;
+}
+.news__item:nth-child(5), .news__item:nth-child(10), .news__item:nth-child(15), .news__item:nth-child(20) {
+  background: #BDFCFC;
+}
+.news__item:nth-child(6), .news__item:nth-child(11), .news__item:nth-child(16), .news__item:nth-child(21) {
+  background: #FCB4B4;
+}
+.news__item-sub {
+  width: 61px;
+  height: 523px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news__item-sub-text {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #EAECF4;
+  font-family: "Days One", sans-serif;
+  font-size: 48px;
+}
+.news__item-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.news__item-img {
+  width: 90%;
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.news__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rukovodstvo__body {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.rukovodstvo__heading {
+  max-width: 990px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.rukovodstvo__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rukovodstvo__item-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background: #FF5500;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  z-index: 2;
+  pointer-events: none;
+  width: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+.rukovodstvo__item-hover.active {
+  width: 300px;
+  visibility: visible;
+}
+.rukovodstvo__item {
+  width: 300px;
+  height: 530px;
+  border-radius: 150px;
+  position: relative;
+  margin-right: 60px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.rukovodstvo__item:last-child {
+  margin-right: 0;
+}
+.rukovodstvo__item:nth-child(1) .rukovodstvo__item-img {
+  background: url(../source/rukovodstvo-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 150px;
+}
+.rukovodstvo__item:nth-child(2) {
+  width: 370px;
+  height: 650px;
+  border-radius: 185px;
+}
+.rukovodstvo__item:nth-child(2) .rukovodstvo__item-name {
+  left: -60px;
+}
+.rukovodstvo__item:nth-child(2) .rukovodstvo__item-img {
+  background: url(../source/rukovodstvo-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 185px;
+}
+.rukovodstvo__item:nth-child(3) .rukovodstvo__item-img {
+  background: url(../source/rukovodstvo-03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 150px;
+}
+.rukovodstvo__item-name {
+  position: absolute;
+  font-size: 24px;
+  font-family: "Days One", sans-serif;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+      -ms-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  top: 50%;
+  left: -80px;
+  z-index: 1;
+  color: white;
+}
+.rukovodstvo__item-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.document__body {
+  margin-top: 200px;
+}
+.document__item {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  background: #1A1C1D;
+  padding: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+.document__item:last-child {
+  margin-bottom: 0;
+}
+.document__item:hover {
+  background: #FF5500;
+}
+.document__item-title {
+  color: white;
+  font-size: 28px;
+}
+.document__item-icon {
+  font-size: 48px;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

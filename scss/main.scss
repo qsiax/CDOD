@@ -1,14 +1,12 @@
 @import '_variables';
 @import '_reset';
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import '_fonts';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	scroll-padding-top: 100px;
 }
 
 html {
@@ -20,10 +18,9 @@ html,
 body {
 	font-size: 16px; 
 	color: $text;
-	font-family: 'Inter', sans-serif;
 	overflow-x: hidden;
-    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
+	font-family: 'Gilroy', sans-serif;
 	&::-webkit-scrollbar {
 		width: 0;
 	}
@@ -47,5 +44,9 @@ body {
 	}
 }
 
+@import '_menu';
 @import '_header';
 @import '_home';
+@import '_news';
+@import '_rukovodstvo';
+@import '_document';

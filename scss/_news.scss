@@ -1,0 +1,112 @@
+.news {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: $mbpage;
+        margin-top: $mtpage;
+    }
+
+    &__heading {
+    }
+
+    &__item-content {
+        display: flex;
+    }
+
+    &__item-wrapper {
+        display: flex;
+    }
+
+    &__item {
+        width: 601px;
+        height: 523px;
+        border-radius: 40px;
+        margin-right: 40px;
+        padding: 30px;
+        position: relative;
+        * {
+            color: $main-color;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:nth-child(1) {
+            max-width: 400px;
+            background: $color-01;
+            border-top-left-radius: 0px;
+            .news__item-img {
+                background: url('../source/news-02.jpg') center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(2) {
+            .news__item-img {
+                background: url('../source/news-01.jpg') center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(3) {
+            .news__item-img {
+                background: url('../source/news-03.jpg') center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(2),&:nth-child(7),&:nth-child(12),&:nth-child(17) {
+            background: $color-02;
+        }
+        &:nth-child(3),&:nth-child(8),&:nth-child(13),&:nth-child(18) {
+            background: $color-03;
+        }
+        &:nth-child(4),&:nth-child(9),&:nth-child(14),&:nth-child(19) {
+            background: $color-04;
+        }
+        &:nth-child(5),&:nth-child(10),&:nth-child(15),&:nth-child(20) {
+            background: $color-05;
+        }
+        &:nth-child(6),&:nth-child(11),&:nth-child(16),&:nth-child(21) {
+            background: $color-06;
+        }
+    }
+    &__item-sub {
+        width: 61px;
+        height: 523px;
+        margin-left: 60px;
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item-sub-text {
+        transform: rotate(-90deg);
+        color: $text-secondary;
+        font-family: $secondary-font;
+        font-size: 48px;
+    }
+
+    &__item-heading {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &__item-img {
+        width: 90%;
+        height: 200px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

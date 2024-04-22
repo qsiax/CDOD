@@ -1,7 +1,32 @@
 .home {
     min-height: 100vh;
-    background: rgb(189,255,57);
-    background: radial-gradient(circle, rgba(189,255,57,1) 0%, rgba(168,255,54,1) 100%);
+    position: relative;
+    
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__video {
+        background: $primary-color;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba($color: #000000, $alpha: .4);
+        z-index: 1;
+    }
+
     &__container {
     }
 
@@ -11,6 +36,7 @@
         justify-content: center;
         min-height: 100vh;
         position: relative;
+        z-index: 2;
     }
 
     &__item-wrapper {
@@ -20,30 +46,38 @@
     }
 
     &__item {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
         background: $main-color;
         filter: drop-shadow(0px 18px 28px rgba(9,30,66,0.1));
         transition: .5s ease;
         cursor: pointer;
-        margin: 20px;
+        margin: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
+        border: 1px solid $text-secondary;
         &.unactive {
-            width: 180px;
-            height: 180px;
+            width: 160px;
+            height: 160px;
         }
         &.active {
-            width: 250px;
-            height: 250px;
+            width: 230px;
+            height: 230px;
             .home__item-circle {
                 visibility: visible;
                 opacity: 1;
                 transform: scale(1);
+            }
+        }
+        &:hover {
+            width: 200px;
+            height: 200px;
+            .home__item-text {
+                color: $primary-color;
             }
         }
     }
@@ -52,8 +86,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         position: relative;
         visibility: hidden;
@@ -74,9 +108,17 @@
                 position: absolute;
                 left: 50%;
                 font-size: 16px;
-                transform-origin: 0 13vmin;
+                transform-origin: 0 100px;
             }
         }
+    }
+
+    &__item-text {
+        font-size: 20px;
+        font-family: $secondary-font;
+        text-align: center;
+        transition: .3s ease;
+        color: #070409;
     }
     
 }

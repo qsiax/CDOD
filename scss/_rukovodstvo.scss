@@ -1,0 +1,110 @@
+.rukovodstvo {
+
+    &__container {
+    }
+
+    &__body {
+        margin-top: $mtpage;
+        margin-bottom: $mbpage;
+    }
+
+    &__heading {
+        max-width: 990px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        background: $primary-color;
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        z-index: 2;
+        pointer-events: none;
+        width: 0;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: $main-color;
+        font-weight: 400;
+        &.active {
+            width: 300px;
+            visibility: visible;
+        }
+    }
+
+    &__item {
+        width: 300px;
+        height: 530px;
+        border-radius: 150px;
+        position: relative;
+        margin-right: 60px;
+        overflow: hidden;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:nth-child(1) {
+            .rukovodstvo__item-img {
+                background: url(../source/rukovodstvo-01.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 150px;
+            }
+        }
+        &:nth-child(2) {
+            width: 370px;
+            height: 650px;
+            border-radius: 185px;
+            .rukovodstvo__item-name {
+                left: -60px;
+            }
+            .rukovodstvo__item-img {
+                background: url(../source/rukovodstvo-02.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 185px;
+            }
+        }
+        &:nth-child(3) {
+            .rukovodstvo__item-img {
+                background: url(../source/rukovodstvo-03.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                        border-radius: 150px;
+            }
+        }
+    }
+
+    &__item-name {
+        position: absolute;
+        font-size: 24px;
+        font-family: $secondary-font;
+        transform: rotate(-90deg) translateY(-50%);
+        top: 50%;
+        left: -80px;
+        z-index: 1;
+        color: $main-color;
+    }
+
+    &__item-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+    }
+}
