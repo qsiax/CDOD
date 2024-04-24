@@ -12,12 +12,17 @@ $transition: all .5s ease;
 $mtpage: 200px;
 $mbpage: 200px;
 
+$mtpageMobile: 80px;
+$mbpageMobile: 150px;
+
 $color-01: #1A1C1D;
 $color-02: #B0D7B4;
 $color-03: #FCECB1;
 $color-04: #CFB2F7;
 $color-05: #BDFCFC;
 $color-06: #FCB4B4;
+
+$pointMobile: 600px;
 
 
 $secondary-font: "Days One", sans-serif;
@@ -31,6 +36,11 @@ $secondary-font: "Days One", sans-serif;
     span {
         color: $primary-color;
     }
+    @media (max-width: $pointMobile) {
+        font-size: 28px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
 }
 
 .heading-page {
@@ -41,8 +51,21 @@ $secondary-font: "Days One", sans-serif;
     span {
         color: $primary-color;
     }
+    @media (max-width: $pointMobile) {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
 }
 
 .sub-heading {
     font-size: 20px;
+    a {
+        transition: .3s ease;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    @media (max-width: $pointMobile) {
+        font-size: 16px;
+    }
 }

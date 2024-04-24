@@ -1,0 +1,147 @@
+.footer {
+    background: #1a1a1a;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: $pointMobile) {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    * {
+        color: $main-color;
+    }
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $pointMobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__wrapper {
+        &:first-child {
+            @media (max-width: $pointMobile) {
+                margin-bottom: 40px;
+            }
+        }
+        a {
+            &:first-child {
+                margin-bottom: 40px;
+                @media (max-width: $pointMobile) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            display: flex;
+        }
+    }
+
+    &__item-wrapper {
+        margin-right: 150px;
+        li {
+            margin-bottom: 10px;
+            a {
+                font-size: 20px;
+                transition: .3s ease;
+                &:hover {
+                    color: $primary-color;
+                }
+                @media (max-width: $pointMobile) {
+                    font-size: 16px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: $pointMobile) {
+            margin-right: 5%;
+        }
+    }
+
+    &__item-heading {
+        font-size: 36px;
+        font-family: $secondary-font;
+        margin-bottom: 20px;
+        color: $primary-color;
+        @media (max-width: $pointMobile) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item-text {
+        font-size: 20px;
+        @media (max-width: $pointMobile) {
+            font-size: 16px;
+            max-width: 150px;
+        }
+    }
+
+    &__social-wrapper {
+        display: flex;
+    }
+
+    &__item-social {
+        font-size: 32px;
+        margin-right: 30px;
+        transition: .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: $pointMobile) {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    }
+
+    .header__logo-wrapper {
+        &.footer-logo {
+            .header__logo {
+                @media (max-width: $pointMobile) {
+                    width: 60px;
+                    height: 60px;
+                    min-width: 60px;
+                    margin-right: 10px;
+                }
+                @media (max-width: 490px) {
+                    margin-right: 10px;
+                }
+            }
+            .header__logo-text {
+                span {
+                    &:first-child {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        @media (max-width: $pointMobile) {
+                            font-size: 8px;
+                        }
+                        @media (max-width: 565px) {
+                            font-size: 8px;
+                        }
+                    }
+                    &:last-child {
+                        font-size: 32px;
+                        text-transform: uppercase;
+                        @media (max-width: $pointMobile) {
+                            font-size: 20px;
+                        }
+                        @media (max-width: 565px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -26,24 +26,24 @@
         </div>
     </div>
 
-    <header class="header">
+    <header class="header sticky nosticky">
         <div class="header__container _container">
             <div class="header__body">
                 <div class="header__content">
-                    <a href="index.html" class="header__logo-wrapper">
+                    <a href="/" class="header__logo-wrapper">
                         <div class="header__logo"></div>
                         <div class="header__logo-text">
                             <span>Детская общественная организация</span>
                             <span>“ханалас эрэлэ”</span>
                         </div>
                     </a>
-                    <a href="index.html" class="header__logo-wrapper">
+                    <div class="header__logo-wrapper">
                         <div class="header__logo"></div>
                         <div class="header__logo-text">
                             <span>Российская движение детей и молодежи</span>
                             <span>“Движение первых”</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="header__menu-wrapper">
                     <div class="header__menu _icon-menu"></div>
@@ -51,51 +51,12 @@
             </div>
         </div>
     </header>
-    <section class="home">
-        <div class="home__bg"></div>
-        <div class="home__video">
-            <video autoplay muted loop>
-                <source src="source/video.mp4" type="video/mp4">
-              </video>
-        </div>
-        <div class="home__container _container">
-            <div class="home__body">
-                <div class="home__content">
-                    <div class="home__item-wrapper">
-                        <a href="index.html" class="home__item">
-                            <div class="home__item-text">Главная</div>
-                        </a>
-                        <a href="news.html" class="home__item">
-                            <div class="home__item-text">Новости</div>
-                        </a>
-                    </div>
-                    <div class="home__item-wrapper">
-                        <a href="festival.html" class="home__item">
-                            <div class="home__item-text">Фестиваль</div>
-                        </a>
-                        <a href="gallery.html" class="home__item">
-                            <div class="home__item-text">Фотогалерея</div>
-                        </a>
-                        <a href="document.html" class="home__item">
-                            <div class="home__item-text">Документы</div>
-                        </a>
-                    </div>
-                    <div class="home__item-wrapper">
-                        <a href="about.html" class="home__item">
-                            <div class="home__item-text">О нас</div>
-                        </a>
-                        <a href="contact.html" class="home__item">
-                            <div class="home__item-text">Контакты</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section class="news">
         <div class="news__container _container">
-            <div class="news__body">
-                <div class="news__heading heading">Последние новости и мероприятие</div>
+            <div class="news__body pageMobile">
+                <div class="news__sub-heading sub-heading"><a href="index.html">Главная</a> - <a href="news.html">Новости</a></div>
+                <div class="news__heading heading-page">Последние новости и мероприятие</div>
                 <div class="news__item-content">
                     <div class="news__item-sub">
                         <div class="news__item-sub-text">Новости</div>
@@ -129,28 +90,6 @@
                                 <div class="news__item-img"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="rukovodstvo">
-        <div class="rukovodstvo__container _container">
-            <div class="rukovodstvo__body">
-                <div class="rukovodstvo__heading heading">Специалисты по организации работы по <span>Движению Первых</span></div>
-                <div class="rukovodstvo__item-hover"></div>
-                <div class="rukovodstvo__item-wrapper">
-                    <div class="rukovodstvo__item">
-                        <div class="rukovodstvo__item-name">Васильев Василий</div>
-                        <div class="rukovodstvo__item-img"></div>
-                    </div>
-                    <div class="rukovodstvo__item">
-                        <div class="rukovodstvo__item-name">Саввина Мария</div>
-                        <div class="rukovodstvo__item-img"></div>
-                    </div>
-                    <div class="rukovodstvo__item">
-                        <div class="rukovodstvo__item-name">Шилова Виктория </div>
-                        <div class="rukovodstvo__item-img"></div>
                     </div>
                 </div>
             </div>
@@ -204,9 +143,7 @@
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>
 </body>

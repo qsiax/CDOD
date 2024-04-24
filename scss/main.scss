@@ -38,7 +38,7 @@ body {
 	max-width: 1760px;
 	margin: 0 auto;
 	overflow: hidden;
-	@media (max-width: 600px) {
+	@media (max-width: $pointMobile) {
 		max-width: 100%;
 		padding: 0px 20px;
 	}
@@ -50,3 +50,8 @@ body {
 @import '_news';
 @import '_rukovodstvo';
 @import '_document';
+@import '_about';
+@import '_gallery';
+@import '_festival';
+@import '_contact';
+@import '_footer';

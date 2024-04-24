@@ -6,6 +6,13 @@
     &__body {
         margin-bottom: $mbpage;
         margin-top: $mtpage;
+        @media (max-width: $pointMobile) {
+            margin-bottom: $mbpageMobile;
+            margin-top: $mbpageMobile;
+            &.pageMobile {
+                margin-top: 150px;
+            }
+        }
     }
 
     &__heading {
@@ -28,6 +35,11 @@
         position: relative;
         * {
             color: $main-color;
+        }
+        @media (max-width: $pointMobile) {
+            width: 100%;
+            min-width: 100%;
+            margin-right: 0;
         }
         &:last-child {
             margin-right: 0;
@@ -72,6 +84,7 @@
             background: $color-06;
         }
     }
+
     &__item-sub {
         width: 61px;
         height: 523px;
@@ -80,6 +93,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: $pointMobile) {
+            display: none;
+        }
     }
 
     &__item-sub-text {

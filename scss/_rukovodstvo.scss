@@ -6,6 +6,10 @@
     &__body {
         margin-top: $mtpage;
         margin-bottom: $mbpage;
+        @media (max-width: $pointMobile) {
+            margin-top: $mtpageMobile;
+            margin-bottom: $mtpageMobile;
+        }
     }
 
     &__heading {
@@ -58,7 +62,7 @@
 
         &:nth-child(1) {
             .rukovodstvo__item-img {
-                background: url(../source/rukovodstvo-01.png);
+                background: url(../source/rukovodstvo-01.png) center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 border-radius: 150px;
@@ -68,11 +72,18 @@
             width: 370px;
             height: 650px;
             border-radius: 185px;
+            @media (max-width: $pointMobile) {
+                width: 30%;
+                height: 300px;
+            }
             .rukovodstvo__item-name {
                 left: -60px;
+                @media (max-width: $pointMobile) {
+                    left: -30px;
+                }
             }
             .rukovodstvo__item-img {
-                background: url(../source/rukovodstvo-02.png);
+                background: url(../source/rukovodstvo-02.png) center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 border-radius: 185px;
@@ -80,11 +91,16 @@
         }
         &:nth-child(3) {
             .rukovodstvo__item-img {
-                background: url(../source/rukovodstvo-03.png);
+                background: url(../source/rukovodstvo-03.png) center;
                 background-repeat: no-repeat;
                 background-size: cover;
                         border-radius: 150px;
             }
+        }
+        @media (max-width: $pointMobile) {
+            width: 30%;
+            height: 300px;
+            margin-right: 20px;
         }
     }
 
@@ -97,6 +113,10 @@
         left: -80px;
         z-index: 1;
         color: $main-color;
+        @media (max-width: $pointMobile) {
+            font-size: 12px;
+            left: -40px;
+        }
     }
 
     &__item-img {

@@ -5,6 +5,11 @@
 
     &__body {
         margin-top: $mtpage;
+        margin-bottom: $mbpage;
+        @media (max-width: $pointMobile) {
+            margin-top: 150px;
+            margin-bottom: $mbpageMobile;
+        }
     }
 
     &__heading {
@@ -31,15 +36,26 @@
         &:hover {
             background: $primary-color;
         }
+        @media (max-width: $pointMobile) {
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
     }
 
     &__item-title {
         color: $main-color;
         font-size: 28px;
+        @media (max-width: $pointMobile) {
+            font-size: 18px;
+        }
     }
 
     &__item-icon {
         font-size: 48px;
         color: $main-color;
+        @media (max-width: $pointMobile) {
+            font-size: 32px;
+        }
     }
 }

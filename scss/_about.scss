@@ -1,0 +1,63 @@
+.about {
+
+    &__container {
+    }
+
+    &__body {
+        margin-top: $mtpage;
+        margin-bottom: $mbpage;
+    }
+
+    &__sub-heading {
+    }
+
+    &__heading {
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $pointMobile) {
+            flex-direction: column;
+        }  
+    }
+
+    &__img {
+        width: 840px;
+        height: 500px;
+        background: url('/source/about.jpg') center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        @media (max-width: $pointMobile) {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &__wrapper {
+        width: 840px;
+        @media (max-width: $pointMobile) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-top: 40px;
+        font-size: 36px;
+        font-family: $secondary-font;
+        color: $primary-color;
+        margin-bottom: 20px;
+        @media (max-width: $pointMobile) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        @media (max-width: $pointMobile) {
+            font-size: 16px;
+        }
+    }
+}
